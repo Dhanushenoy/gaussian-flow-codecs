@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs and data
+results/
+outputs/
+paper_plots/
+Data/
+*.vtk
+*.vtp
+*.vti
+*.npy
+*.npz
+*.png
+*.pdf
+*.eps
+
+# Logs
+*.log

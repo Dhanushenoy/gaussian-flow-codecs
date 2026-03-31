@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaussian-flow-codecs"
+version = "0.1.0"
+description = "Research codebase for compact Gaussian parametric representations of fluid flow fields."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Dhanush Vittal Shenoy" }
+]
+keywords = ["cfd", "compression", "gaussian", "flow", "vtk", "reconstruction"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pyvista>=0.43",
+  "torch>=2.2",
+]
+
+[project.scripts]
+gfc = "gaussian_flow_codecs.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
