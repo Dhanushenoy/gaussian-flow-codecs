@@ -38,6 +38,9 @@ Data/
 *.png
 *.pdf
 *.eps
+!docs/
+!docs/images/
+!docs/images/*.png
 
 # Logs
 *.log
